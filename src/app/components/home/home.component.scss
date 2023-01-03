@@ -1,0 +1,159 @@
+$darkPink: #ac7070;
+$primaryColor: #a88989;
+
+@font-face {
+  font-family: "MeshedMedium";
+  src: url("../../../assets/fonts/Meshed/MeshedDisplay-Medium.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "MeshedSlanted";
+  src: url("../../../assets/fonts/Meshed/MeshedDisplay-Thin.ttf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Merchant";
+  src: url("../../../assets/fonts/Merchant/Merchant-ExtraLight.ttf");
+}
+
+.home {
+  display: flex;
+  width: 80vw;
+  margin: auto;
+  padding-top: 5%;
+  div {
+    width: 50%;
+  }
+  #compName {
+    padding: 20px;
+    font-size: 20vh;
+    font-family: "MeshedMedium";
+    text-align: center;
+    p {
+      padding: 10px;
+      line-height: 1.1em;
+      margin: 0;
+      letter-spacing: 0.5vw;
+    }
+  }
+  #line {
+    font-size: 60vh;
+    padding: 0;
+    margin: 0;
+    color: $primaryColor;
+    line-height: 105%;
+    font-family: "MeshedSlanted";
+  }
+  #line:after {
+    content: "/";
+  }
+  #compInfo {
+    font-size: 2.2vw;
+    font-family: "Merchant";
+    padding: 30px;
+    p {
+      padding: 1px;
+      line-height: 1.8em;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .home {
+    display: flex;
+    width: 80vw;
+    margin: auto;
+    padding-top: 10%;
+
+    div {
+      width: 95%;
+    }
+    #compName {
+      padding: 0;
+      margin: auto;
+      font-size: 10vh;
+      font-family: "MeshedMedium";
+      text-align: center;
+      p {
+        padding: 10px;
+        line-height: normal;
+        margin: 0;
+        letter-spacing: 0.5vw;
+      }
+    }
+    #line {
+      font-size: 15vh;
+      padding: 0;
+      margin: 0;
+      color: $darkPink;
+      line-height: 2.2;
+      font-weight: bolder;
+      text-align: center;
+    }
+    #line:after {
+      content: "\007C";
+    }
+    #compInfo {
+      width: 80vw;
+      font-size: 2.2vh;
+      font-family: "Merchant";
+      padding: 10px;
+      margin: auto;
+      p {
+        padding: 10px;
+        line-height: 1.5em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .home {
+    display: block;
+    width: 80vw;
+    margin: auto;
+    padding-top: 15%;
+
+    div {
+      width: 95%;
+    }
+    #compName {
+      padding: 0;
+      margin: auto;
+      font-size: 10vh;
+      font-family: "MeshedMedium";
+      text-align: center;
+      p {
+        padding: 10px;
+        line-height: normal;
+        margin: 0;
+        letter-spacing: 0.5vw;
+      }
+    }
+    #line {
+      font-size: 10vh;
+      padding: 0;
+      margin: 0;
+      color: $darkPink;
+      line-height: 15%;
+      font-weight: bolder;
+      text-align: center;
+    }
+    #line:after {
+      content: "\2015";
+    }
+    #compInfo {
+      width: 80vw;
+      font-size: 2.2vh;
+      font-family: "Merchant";
+      padding: 10px;
+      margin: auto;
+      p {
+        padding: 10px;
+        line-height: 1.5em;
+      }
+    }
+  }
+}

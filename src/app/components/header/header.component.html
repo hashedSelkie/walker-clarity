@@ -1,0 +1,53 @@
+<header>
+  <nav>
+    <ul>
+      <li>
+        <a
+          routerLink="/home"
+          routerLinkActive="activepage"
+          ariaCurrentWhenActive="page"
+          >Home</a
+        >
+      </li>
+      <li>
+        <a
+          routerLink="/services"
+          routerLinkActive="activepage"
+          ariaCurrentWhenActive="page"
+          >Services</a
+        >
+      </li>
+      <li>
+        <a
+          routerLink="/contracts"
+          routerLinkActive="activepage"
+          ariaCurrentWhenActive="page"
+          >Previous Contracts</a
+        >
+      </li>
+      <li>
+        <a
+          routerLink="/about"
+          routerLinkActive="activepage"
+          ariaCurrentWhenActive="page"
+          >About</a
+        >
+      </li>
+    </ul>
+  </nav>
+  <div class="menuWrap">
+    <i class="fa-solid fa-bars" (click)="openMenu($event)"></i>
+  </div>
+</header>
+
+<div class="overlayMenu" id="myNav">
+  <div class="closeIcon">
+    <p (click)="closeMenu($event)">&#9587;</p>
+  </div>
+  <div class="mobmenu">
+    <a routerLink="/home" (click)="closeMenu($event)">Home</a>
+    <a routerLink="/services" (click)="closeMenu($event)">Services</a>
+    <a routerLink="/contracts" (click)="closeMenu($event)">Contracts</a>
+    <a routerLink="/about" (click)="closeMenu($event)">About</a>
+  </div>
+</div>

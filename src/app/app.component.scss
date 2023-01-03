@@ -1,0 +1,9 @@
+.screensize {
+  min-height: 70vh;
+}
+
+@media screen and (max-width: 1400px) {
+  .screensize {
+    min-height: 80vh;
+  }
+}

@@ -1,0 +1,30 @@
+$primaryColor: #a88989;
+$darkPink: #ac7070;
+
+@font-face {
+  font-family: "MeshedMedium";
+  src: url("../../../assets/fonts/Meshed/MeshedDisplay-Medium.otf")
+    format("opentype");
+}
+
+footer {
+  background-color: $primaryColor;
+  p {
+    text-align: center;
+    padding-top: 5vh;
+    font-family: "MeshedMedium";
+    font-size: 3vh;
+  }
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+
+  .icons {
+    width: auto;
+  }
+  img {
+    width: 7vh;
+    padding: 1vh 2vh 5vh 2vh;
+  }
+}

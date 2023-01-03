@@ -1,0 +1,130 @@
+$fontColorStandard: black;
+$clarityPink: #d7bebe;
+$activeLinkColor: rgba(207, 39, 39, 0.8);
+$burgerMenuColor: rgb(32, 21, 21);
+$primaryColor: #a88989;
+
+@font-face {
+  font-family: "MeshedMedium";
+  src: url("../../../assets/fonts/Meshed/MeshedDisplay-Medium.ttf")
+    format("opentype");
+}
+
+header {
+  background-color: $primaryColor;
+  height: 10vh;
+  margin: 0;
+  font-family: "MeshedMedium";
+}
+
+nav {
+  width: 70vw;
+  margin: 0 auto 0 auto;
+  padding: 0 20px;
+}
+
+ul {
+  padding: 4vh;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+li {
+  margin: auto;
+  font-size: 2.5vh;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+}
+
+a:hover {
+  color: $activeLinkColor;
+}
+
+a {
+  text-decoration: none;
+  color: $fontColorStandard;
+}
+
+.activepage {
+  color: white;
+}
+
+i {
+  display: none;
+}
+
+@media screen and (max-width: 1400px) {
+  nav {
+    width: 90vw;
+    margin: 0 auto 0 auto;
+    padding: 0;
+  }
+  ul {
+    padding-top: 4vh;
+  }
+  li {
+    margin: 0 3.5vw 0 3.5vw;
+    font-size: 2vh;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .menuWrap {
+    position: relative;
+  }
+  i {
+    text-align: right;
+    position: absolute;
+    top: 2vh;
+    right: 4vw;
+    font-size: 2.5em;
+    color: $burgerMenuColor;
+    display: block;
+  }
+
+  ul {
+    display: none;
+  }
+}
+
+.overlayMenu {
+  width: 100%;
+  height: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgb(104, 70, 76);
+  overflow-x: hidden;
+  transition: 0.5s;
+  color: white;
+}
+.mobmenu {
+  position: relative;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  font-family: "MeshedMedium";
+  letter-spacing: 5px;
+  a {
+    padding: 20px;
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+}
+.closeIcon {
+  p {
+    text-align: right;
+    padding: 10px;
+    margin: 0;
+    font-size: 1.5em;
+  }
+}

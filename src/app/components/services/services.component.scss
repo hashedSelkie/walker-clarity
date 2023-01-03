@@ -1,0 +1,115 @@
+$primaryColor: #a88989;
+
+@font-face {
+  font-family: "Sublima";
+  src: url("../../../assets/fonts/Sublima-Light.otf");
+}
+
+@font-face {
+  font-family: "MeshedLight";
+  src: url("../../../assets/fonts/Meshed/MeshedDisplay-Light.otf")
+    format("opentype");
+}
+
+.wrapperServices2 {
+  h2 {
+    text-align: center;
+    font-family: "MeshedLight";
+    font-size: 7vh;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    margin: 0;
+    position: absolute;
+    top: 14%;
+    left: 0;
+    right: 0;
+  }
+
+  #lineBehind {
+    background-color: $primaryColor;
+    height: 4.5vh;
+    position: relative;
+    margin: 6vh 0 0 0;
+  }
+}
+.wrapperServices {
+  margin: auto;
+  width: 45vw;
+  justify-content: center;
+
+  ul {
+    font-family: "Sublima";
+    list-style-type: none;
+    font-size: 2.5vh;
+    padding: 2vw;
+  }
+  li {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+  }
+  i {
+    color: #957c7c;
+    font-size: 2vh;
+    font-weight: bolder;
+    display: inline-block;
+    width: 2.1em;
+    margin-left: -1em;
+    padding-bottom: 10px;
+    position: absolute;
+    top: 23px;
+    left: -3px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .wrapperServices2 {
+    h2 {
+      font-size: 3vh;
+      font-weight: lighter;
+      letter-spacing: 7px;
+      margin: 0;
+      position: absolute;
+      top: 12%;
+    }
+
+    #lineBehind {
+      background-color: $primaryColor;
+      height: 4.5vh;
+      position: relative;
+      margin: 3vh 0 0 0;
+    }
+  }
+  .wrapperServices {
+    margin: auto;
+    width: 80vw;
+    justify-content: center;
+    padding-top: 3vh;
+
+    ul {
+      font-family: "Sublima";
+      list-style-type: none;
+      font-size: 2.2vh;
+      padding: 2vw;
+    }
+    li {
+      padding: 10px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    i {
+      color: #957c7c;
+      font-size: 2vh;
+      font-weight: bolder;
+      display: inline-block;
+      width: 2.1em;
+      margin-left: -1em;
+      padding-bottom: 1px;
+      top: 19px;
+    }
+  }
+}
